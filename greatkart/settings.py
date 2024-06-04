@@ -26,6 +26,7 @@ SECRET_KEY = '^ej+74rbcx(p+fo0wg5#xk9$4@z&+^6yw8%uz243vq-(y$u*j2'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
 
 
 # Application definition
@@ -41,6 +42,9 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     'carts',
+    'orders',
+
+    'paypal.standard.ipn',
 ]
 
 MIDDLEWARE = [
